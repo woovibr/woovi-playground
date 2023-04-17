@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/react-library.json",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+	"extends": "@woovi-playground/tsconfig/react-library.json",
+	"include": ["."],
+	"exclude": ["dist", "build", "node_modules"]
 }

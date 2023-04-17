@@ -1,4 +1,4 @@
 module.exports = {
-  reactStrictMode: true,
-  transpilePackages: ["ui"],
+	reactStrictMode: true,
+	transpilePackages: ['@woovi-playground/ui'],
 };
