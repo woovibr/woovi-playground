@@ -54,8 +54,7 @@ async function networkFetch(
 	variables: Variables,
 	headers?: HeadersInit
 ) {
-	// Fetch data from GitHub's GraphQL API:
-	// TODO: Add GraphQL Endpoint
+	// Fetch data from GraphQL API:
 	const response = await fetch(GRAPHQL_ENPOINT, {
 		method: 'POST',
 		credentials: 'include',
