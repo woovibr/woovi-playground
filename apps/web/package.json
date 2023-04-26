@@ -3,10 +3,11 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
+		"config:local": "cp .env.example .env",
+		"dev": "next dev",
+		"lint": "next lint",
+		"start": "next start"
 	},
 	"dependencies": {
 		"@emotion/react": "^11.10.6",
