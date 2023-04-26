@@ -16,6 +16,10 @@ const MessageType = new GraphQLObjectType<IMessage>({
 			type: GraphQLString,
 			resolve: (message) => message.content,
 		},
+		createdAt: {
+			type: GraphQLString,
+			resolve: (message) => message.createdAt.toISOString(),
+		},
 	}),
 	interfaces: () => [nodeInterface],
 });
