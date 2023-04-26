@@ -57,7 +57,6 @@ async function networkFetch(
 	// Fetch data from GraphQL API:
 	const response = await fetch(GRAPHQL_ENPOINT, {
 		method: 'POST',
-		credentials: 'include',
 		headers: {
 			...headers,
 			'Content-Type': 'application/json',

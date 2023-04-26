@@ -1,5 +1,6 @@
 import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
+import cors from 'kcors';
 import { graphqlHTTP } from 'koa-graphql';
 import Router from 'koa-router';
 
@@ -9,6 +10,7 @@ import { getContext } from './getContext';
 
 const app = new Koa();
 
+app.use(cors({ origin: '*' }))
 app.use(
 	bodyParser({
 		onerror(err, ctx) {

@@ -626,6 +626,13 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
+"@types/kcors@^2.2.6":
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/@types/kcors/-/kcors-2.2.6.tgz#24a531f4b36329a80d6e4299aac655c363a95af0"
+  integrity sha512-y5gCt/795EWTR5AZrgbG2rez6l5aYF3RNIHrsLMl6U9LbzUUWcDOApAxu0pMCORTNdJr+jOrEW3NlZ++jnO0sQ==
+  dependencies:
+    "@types/koa" "*"
+
 "@types/keygrip@*":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@types/keygrip/-/keygrip-1.0.2.tgz#513abfd256d7ad0bf1ee1873606317b33b1b2a72"
@@ -2569,6 +2576,11 @@ kareem@2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.5.1.tgz#7b8203e11819a8e77a34b3517d3ead206764d15d"
   integrity sha512-7jFxRVm+jD+rkq3kY0iZDJfsO2/t4BBPeEb2qKn2lR/9KhuksYk5hxzfRYWMPV8P/x2d0kHD306YyWLzjjH+uA==
+
+kcors@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/kcors/-/kcors-2.2.2.tgz#b6250e7a4f0a33c8f477b7fd0dfa11a3f3ca518d"
+  integrity sha512-rIqbKa2S0gT0wC/790jsQM6hNpABHBNWQ7+XYS1xJV6zOGxlanW+RtCmlDn6wPZsGpRk371yy8abfBgl2OTavg==
 
 keygrip@~1.1.0:
   version "1.1.0"
