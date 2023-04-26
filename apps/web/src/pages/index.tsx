@@ -6,10 +6,12 @@ import { MessageList } from '../components/MessageList';
 import { getPreloadedQuery } from '../relay/network';
 import { PreloadedQuery, graphql, usePreloadedQuery } from 'react-relay';
 import pageQuery, { pages_PageQuery } from '../__generated__/pages_PageQuery.graphql';
+import { useMessageAddedSubscription } from '../components/subscriptions/useMessageAddedSubscription';
 
 const IndexQuery = graphql`
-  query pages_PageQuery {
-    messages {
+  query pages_PageQuery($first: Int!, $after: String) {
+    messages(first: $first, after: $after) @connection(key: "pages_messages") {
+			__id
 			edges {
 				node {
 					id
@@ -30,6 +32,10 @@ type IndexProps = {
 const Index = ({ queryRefs }: IndexProps) => {
 	const data = usePreloadedQuery<pages_PageQuery>(IndexQuery, queryRefs.pageQueryRef);
 	
+	useMessageAddedSubscription({
+		connections: [data.messages?.__id]
+	});
+
 	return (
 		<Layout>
 			<MessageList>
@@ -47,7 +53,10 @@ export const getServerSideProps: GetServerSideProps = async context => {
       preloadedQueries: {
         pageQueryRef: await getPreloadedQuery(
           pageQuery,
-          {},
+          {
+						first: 100,
+						after: null,
+					},
         ),
       },
     },

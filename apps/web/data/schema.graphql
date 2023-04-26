@@ -1,5 +1,17 @@
 type Query {
-  messages: MessageConnection
+  messages(
+    """Returns the items in the list that come after the specified cursor."""
+    after: String
+
+    """Returns the first n items from the list."""
+    first: Int
+
+    """Returns the items in the list that come before the specified cursor."""
+    before: String
+
+    """Returns the last n items from the list."""
+    last: Int
+  ): MessageConnection
 }
 
 """A connection to a list of items."""

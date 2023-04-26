@@ -1,19 +1,24 @@
 import { Box, Card, Typography } from '@mui/material';
-import { WooviAvatar } from './WooviAvatar';
-import { useFragment } from 'react-relay';
+import { graphql, useFragment } from 'react-relay';
 import { DateTime } from 'luxon';
+
+import { WooviAvatar } from './WooviAvatar';
+import { Message_message$key } from '../__generated__/Message_message.graphql';
 
 type MessageProps = {
 	message: Message_message$key;
 };
 
 export const Message = (props: MessageProps) => {
-	const message = useFragment<Message_message$key>(graphql`
-		fragment Message_message on Message {
-			content
-			createdAt
-		}
-	`, props.message);
+	const message = useFragment<Message_message$key>(
+		graphql`
+			fragment Message_message on Message {
+				content
+				createdAt
+			}
+		`,
+		props.message
+	);
 
 	return (
 		<Card
