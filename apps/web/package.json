@@ -7,6 +7,7 @@
 		"config:local": "cp .env.example .env",
 		"dev": "next dev",
 		"lint": "next lint",
+		"relay": "relay-compiler",
 		"start": "next start"
 	},
 	"dependencies": {
@@ -31,6 +32,7 @@
 		"@types/relay-runtime": "^14.1.10",
 		"@woovi-playground/eslint-config-custom": "*",
 		"@woovi-playground/tsconfig": "*",
+		"relay-compiler": "^15.0.0",
 		"typescript": "^4.5.3"
 	}
 }
