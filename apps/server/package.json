@@ -5,7 +5,7 @@
 	"scripts": {
 		"config:local": "cp .env.example .env",
 		"dev": "tsx watch src/index.ts",
-		"schema": "tsx scripts/updateSchema.ts"
+		"schema": "tsx scripts/updateSchema.ts && cp schema/schema.graphql ../web/data"
 	},
 	"dependencies": {
 		"@entria/graphql-mongo-helpers": "^1.1.2",
