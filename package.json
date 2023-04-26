@@ -2,10 +2,11 @@
 	"private": true,
 	"scripts": {
 		"build": "turbo run build",
+		"config:local": "turbo run config:local",
 		"dev": "turbo run dev",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
 		"lint": "turbo run lint",
-		"schema": "turbo run schema",
-		"format": "prettier --write \"**/*.{ts,tsx,md}\""
+		"schema": "turbo run schema"
 	},
 	"devDependencies": {
 		"@woovi-playground/eslint-config-custom": "*",

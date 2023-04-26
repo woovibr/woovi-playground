@@ -3,8 +3,9 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"schema": "tsx scripts/updateSchema.ts",
-		"dev": "tsx --watch src/index.ts"
+		"config:local": "cp .env.example .env",
+		"dev": "tsx --watch src/index.ts",
+		"schema": "tsx scripts/updateSchema.ts"
 	},
 	"dependencies": {
 		"@entria/graphql-mongo-helpers": "^1.1.2",

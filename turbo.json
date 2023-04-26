@@ -5,11 +5,12 @@
 		"build": {
 			"outputs": [".next/**", "!.next/cache/**"]
 		},
-		"lint": {},
+		"config:local": {},
 		"dev": {
 			"cache": false,
 			"persistent": true
 		},
+		"lint": {},
 		"schema": {}
 	}
 }
