@@ -15,8 +15,6 @@ const subscription = subscriptionWithClientId({
 	subscribe: withFilter(
 		() => redisPubSub.asyncIterator(PUB_SUB_EVENTS.MESSAGE.ADDED),
 		async (payload: MessageAddedPayload, context) => {
-			console.log({ payload });
-
 			const message = await Message.findOne({
 				_id: payload.message,
 			});
@@ -28,12 +26,9 @@ const subscription = subscriptionWithClientId({
 			return true;
 		}
 	),
-	getPayload: async (obj: MessageAddedPayload = {}) => {
-		console.log(obj);
-		return {
-			message: obj.message,
-		};
-	},
+	getPayload: async (obj: MessageAddedPayload) => ({
+		message: obj?.message,
+	}),
 	outputFields: {
 		...messageField('message'),
 	},

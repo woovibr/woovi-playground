@@ -13,11 +13,7 @@ export const messageConnectionField = (key: string) => ({
 	[key]: {
 		type: MessageConnection.connectionType,
 		resolve: async (_, args, context) => {
-			const hmm = await MessageLoader.loadAll(context, args);
-
-			console.log({ hmm });
-
-			return hmm;
+			return await MessageLoader.loadAll(context, args);
 		},
 	},
 });
