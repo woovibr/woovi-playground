@@ -3,6 +3,7 @@ import bodyParser from 'koa-bodyparser';
 import cors from 'kcors';
 import { graphqlHTTP } from 'koa-graphql';
 import Router from 'koa-router';
+import logger from 'koa-logger';
 
 import { ws } from './ws';
 import { schema } from '../schema/schema';
@@ -12,6 +13,7 @@ import { createWebsocketMiddleware } from './websocketMiddleware';
 const app = new Koa();
 
 app.use(cors({ origin: '*' }));
+app.use(logger());
 app.use(
 	bodyParser({
 		onerror(err, ctx) {
