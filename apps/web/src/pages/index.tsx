@@ -57,7 +57,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 		props: {
 			preloadedQueries: {
 				pageQueryRef: await getPreloadedQuery(pageQuery, {
-					first: 100,
+					first: 1,
 					after: null,
 				}),
 			},
