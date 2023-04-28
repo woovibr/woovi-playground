@@ -7,10 +7,11 @@ import Router from 'koa-router';
 import { ws } from './ws';
 import { schema } from '../schema/schema';
 import { getContext } from './getContext';
+import { createWebsocketMiddleware } from './websocketMiddleware';
 
 const app = new Koa();
 
-app.use(cors({ origin: '*' }))
+app.use(cors({ origin: '*' }));
 app.use(
 	bodyParser({
 		onerror(err, ctx) {
@@ -19,7 +20,11 @@ app.use(
 	})
 );
 
+app.use(createWebsocketMiddleware());
+
 const routes = new Router();
+
+routes.all('/graphql/ws', ws);
 
 routes.all(
 	'/graphql',
@@ -30,8 +35,7 @@ routes.all(
 	}))
 );
 
-routes.all('/graphql/ws', ws);
-
-app.use(routes.routes()).use(routes.allowedMethods());
+app.use(routes.routes());
+app.use(routes.allowedMethods());
 
 export { app };

@@ -23,7 +23,8 @@
 		"koa-graphql": "^0.12.0",
 		"koa-logger": "^3.2.1",
 		"koa-router": "^12.0.0",
-		"mongoose": "^7.0.3"
+		"mongoose": "^7.0.3",
+		"ws": "^8.13.0"
 	},
 	"devDependencies": {
 		"@types/kcors": "^2.2.6",
