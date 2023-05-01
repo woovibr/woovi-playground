@@ -30,7 +30,6 @@ export const wsServer = (server: Server) => {
 
 				const args = {
 					schema,
-					contextValue: getContext(),
 					operationName,
 					document,
 					variableValues: variables,
@@ -45,6 +44,6 @@ export const wsServer = (server: Server) => {
 				return args;
 			},
 		},
-		wss,
+		wss
 	);
 };
