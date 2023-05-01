@@ -3,7 +3,7 @@ import http from 'http';
 import WebSocket, { WebSocketServer as WSWebSocketServer } from 'ws';
 
 // work with commonjs and esm
-const WebSocketServer = WebSocket.Server || WSWebSocketServer;
+const WebSocketServer = WSWebSocketServer;
 
 export const createWebsocketMiddleware = (
 	propertyName = 'ws',
