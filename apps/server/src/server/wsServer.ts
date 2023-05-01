@@ -3,10 +3,12 @@ import { useServer } from 'graphql-ws/lib/use/ws';
 import { schema } from '../schema/schema';
 import { execute, parse, subscribe, validate } from 'graphql';
 import { getContext } from './getContext';
+import { Server } from 'http';
 
-export const wsServer = (app: unknown) => {
-	const server = new WebSocketServer({
-		noServer: true,
+export const wsServer = (server: Server) => {
+	const wss = new WebSocketServer({
+		server,
+		path: '/graphql/ws',
 	});
 
 	useServer(
@@ -43,14 +45,6 @@ export const wsServer = (app: unknown) => {
 				return args;
 			},
 		},
-		server
+		wss,
 	);
-
-	app.on('upgrade', (req, socket, head) => {
-		if (req.url === '/graphql/ws') {
-			server.handleUpgrade(req, socket, head, (ws) => {
-				server.emit('connection', ws, req);
-			});
-		}
-	});
 };
