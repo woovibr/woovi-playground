@@ -33,7 +33,7 @@ export const ws = async (ctx) => {
 
 					const args = {
 						schema,
-						contextValue: getContext(),
+						contextValue: {},
 						operationName,
 						document,
 						variableValues: variables,
@@ -48,18 +48,18 @@ export const ws = async (ctx) => {
 					return args;
 				},
 				// onNext: async ({ connectionParams }) => {
-				// 	const token = getTokenFromConnectionParams(connectionParams);
+				//   const token = getTokenFromConnectionParams(connectionParams);
 
-				// 	if (!(await isTokenValid(token))) {
-				// 		return ctx.extra.socket.close(4403, 'Forbidden');
-				// 	}
+				//   if (!(await isTokenValid(token))) {
+				//     return ctx.extra.socket.close(4403, 'Forbidden');
+				//   }
 				// },
-				onError: (ctx, msg, errors) => {
-					console.error('Error', { ctx, msg, errors });
-				},
-				onComplete: (ctx, msg) => {
-					console.log('Complete', { ctx, msg });
-				},
+				// onError: (ctx, msg, errors) => {
+				//   console.error('Error', { ctx, msg, errors });
+				// },
+				// onComplete: (ctx, msg) => {
+				//   console.log('Complete', { ctx, msg });
+				// },
 			},
 			ctx.wss
 		);

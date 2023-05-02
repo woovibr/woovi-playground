@@ -5,7 +5,6 @@ import { graphqlHTTP } from 'koa-graphql';
 import Router from 'koa-router';
 import logger from 'koa-logger';
 
-import { ws } from './ws';
 import { schema } from '../schema/schema';
 import { getContext } from './getContext';
 import { createWebsocketMiddleware } from './websocketMiddleware';
@@ -26,7 +25,7 @@ app.use(createWebsocketMiddleware());
 
 const routes = new Router();
 
-routes.all('/graphql/ws', ws);
+// routes.all('/graphql/ws', wsServer);
 
 routes.all(
 	'/graphql',
