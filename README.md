@@ -1,81 +1,139 @@
-# Turborepo starter
+<div id="top"></div>
 
-This is an official starter Turborepo.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/entria/woovi-playground">
+    <img src="https://user-images.githubusercontent.com/70105678/236887308-8ad0ccb7-2fc6-4269-8725-da71c547f54a.png" alt="Logo">
+  </a>
 
-## Using this example
+  <h3 align="center">Woovi Playground</h3>
 
-Run the following command:
+  <p align="center">
+    <a href="https://github.com/entria/woovi-playground/issues">Report Bug</a>
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+### Built With
+
+[![Next][next.js]][next-url]
+[![React][react.js]][react-url]
+[![Node][node.js]][node-url]
+[![GraphQL][graphql]][graphql-url]
+[![MongoDB][mongodb]][mongodb-url]
+[![Koa][koa]][koa-url]
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+
+- Node.js
+  ```sh
+  https://nodejs.org/en/download/
+  ```
+- yarn
+  ```sh
+  npm install yarn -g
+  ```
+- MongoDB
+  ```sh
+  https://www.mongodb.com/docs/manual/installation/
+  ```
+
+## Installation
+
+Clone the repo
 
 ```sh
-npx create-turbo@latest
+git clone https://github.com/entria/woovi-playground.git
 ```
 
-## What's inside?
+1. Install packages
+   ```sh
+   yarn install
+   ```
+2. Setup Server Configuration
+   ```sh
+   cd apps/server
+   yarn config:local
+   ```
+3. Setup Web Configuration
+   ```sh
+   cd apps/web
+   yarn config:local
+   ```
+4. Run the Project
+   ```sh
+   yarn dev
+   ```
 
-This Turborepo includes the following packages/apps:
+<!-- CONTRIBUTING -->
 
-### Apps and Packages
+## Contributing
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-### Utilities
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/amazing-feature`)
+3. Commit your Changes (`git commit -m 'feat(amazing-feature): my feature is awesome'`)
+4. Push to the Branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-This Turborepo has some additional tools already setup for you:
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+<!-- CONTACT -->
 
-### Build
+## Contact
 
-To build all apps and packages, run the following command:
+Project Link: [https://github.com/entria/woovi-playground](https://github.com/entria/woovi-playground)
 
-```
-cd my-turborepo
-pnpm build
-```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Develop
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+[next.js]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[next-url]: https://nextjs.org/
+[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]: https://reactjs.org/
+[node.js]: https://img.shields.io/badge/NodeJS-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
+[node-url]: https://nodejs.org/
+[graphql]: https://img.shields.io/badge/Graphql-E10098?style=for-the-badge&logo=graphql&logoColor=white
+[graphql-url]: https://graphql.org/
+[mongodb]: https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white
+[mongodb-url]: https://mongodb.com
+[koa]: https://img.shields.io/badge/Koa-F9F9F9?style=for-the-badge&logo=koa&logoColor=33333D
+[koa-url]: https://koajs.com
