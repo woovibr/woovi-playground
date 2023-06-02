@@ -82,14 +82,8 @@ git clone https://github.com/entria/woovi-playground.git
    ```sh
    yarn install
    ```
-2. Setup Server Configuration
+2. Setup Configuration
    ```sh
-   cd apps/server
-   yarn config:local
-   ```
-3. Setup Web Configuration
-   ```sh
-   cd apps/web
    yarn config:local
    ```
 4. Run the Project
