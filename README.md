@@ -58,14 +58,19 @@ To get a local copy up and running follow these simple example steps.
 This is an example of how to list things you need to use the software and how to install them.
 
 - Node.js
+
   ```sh
   https://nodejs.org/en/download/
   ```
+
 - yarn
+
   ```sh
   npm install yarn -g
   ```
+
 - MongoDB
+
   ```sh
   https://www.mongodb.com/docs/manual/installation/
   ```
@@ -79,14 +84,25 @@ git clone https://github.com/entria/woovi-playground.git
 ```
 
 1. Install packages
+
    ```sh
    yarn install
    ```
+
 2. Setup Configuration
+
    ```sh
    yarn config:local
    ```
+
+3. Run the relay
+
+    ```sh
+    yarn relay
+    ```
+
 4. Run the Project
+
    ```sh
    yarn dev
    ```
