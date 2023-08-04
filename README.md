@@ -63,10 +63,10 @@ This is an example of how to list things you need to use the software and how to
   https://nodejs.org/en/download/
   ```
 
-- yarn
+- PNPM
 
   ```sh
-  npm install yarn -g
+  npm install pnpm -g
   ```
 
 - MongoDB
@@ -86,25 +86,25 @@ git clone https://github.com/entria/woovi-playground.git
 1. Install packages
 
    ```sh
-   yarn install
+   pnpm install
    ```
 
 2. Setup Configuration
 
    ```sh
-   yarn config:local
+   pnpm config:local
    ```
 
 3. Run the relay
 
     ```sh
-    yarn relay
+    pnpm relay
     ```
 
 4. Run the Project
 
    ```sh
-   yarn dev
+   pnpm dev
    ```
 
 <!-- CONTRIBUTING -->

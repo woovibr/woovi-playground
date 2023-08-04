@@ -1,5 +1,6 @@
 {
 	"private": true,
+	"name": "woovi-playground",
 	"scripts": {
 		"build": "turbo run build",
 		"config:local": "turbo run config:local",
@@ -15,11 +16,5 @@
 		"eslint": "^7.32.0",
 		"prettier": "^2.5.1",
 		"turbo": "latest"
-	},
-	"name": "woovi-playground",
-	"packageManager": "yarn@1.22.19",
-	"workspaces": [
-		"apps/*",
-		"packages/*"
-	]
+	}
 }
