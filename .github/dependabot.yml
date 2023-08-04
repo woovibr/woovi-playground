@@ -1,5 +1,5 @@
 version: 2
 updates:
-  - package-ecosystem: pnpm
+  - package-ecosystem: npm
     directory: "/"
     open-pull-requests-limit: 20
