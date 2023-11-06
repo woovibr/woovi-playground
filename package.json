@@ -13,7 +13,7 @@
 	"devDependencies": {
 		"@woovi-playground/eslint-config-custom": "*",
 		"autoprefixer": "^10.4.16",
-		"eslint": "^8.52.0",
+		"eslint": "^8.53.0",
 		"prettier": "^3.0.3",
 		"turbo": "latest"
 	}
