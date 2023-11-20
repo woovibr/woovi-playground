@@ -27,7 +27,7 @@
 		"ws": "^8.13.0"
 	},
 	"devDependencies": {
-		"@types/kcors": "^2.2.6",
+		"@types/kcors": "^2.2.8",
 		"@types/koa": "^2.13.5",
 		"@types/koa-bodyparser": "^4.3.10",
 		"@types/koa-logger": "^3.1.2",
