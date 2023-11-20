@@ -14,7 +14,7 @@
 		"@emotion/react": "^11.10.6",
 		"@emotion/server": "^11.10.0",
 		"@emotion/styled": "^11.10.6",
-		"@mui/icons-material": "^5.11.16",
+		"@mui/icons-material": "^5.14.18",
 		"@mui/material": "^5.12.0",
 		"@woovi-playground/ui": "*",
 		"graphql-ws": "^5.12.1",
