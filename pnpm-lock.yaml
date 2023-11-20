@@ -79,8 +79,8 @@ importers:
         version: 8.13.0
     devDependencies:
       '@types/kcors':
-        specifier: ^2.2.6
-        version: 2.2.6
+        specifier: ^2.2.8
+        version: 2.2.8
       '@types/koa':
         specifier: ^2.13.5
         version: 2.13.5
@@ -1138,8 +1138,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
 
-  /@types/kcors@2.2.6:
-    resolution: {integrity: sha512-y5gCt/795EWTR5AZrgbG2rez6l5aYF3RNIHrsLMl6U9LbzUUWcDOApAxu0pMCORTNdJr+jOrEW3NlZ++jnO0sQ==}
+  /@types/kcors@2.2.8:
+    resolution: {integrity: sha512-TlxkCzlWRHpup5lu0I4UoF9sxOJ0KHPKudDMGS+dKkST/ZPnQ/NxRYyL1ARLU1mC4otFryIwhkAizHJPBtPrCQ==}
     dependencies:
       '@types/koa': 2.13.5
     dev: true
