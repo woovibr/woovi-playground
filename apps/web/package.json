@@ -34,7 +34,7 @@
 		"@types/relay-runtime": "^14.1.10",
 		"@woovi-playground/eslint-config-custom": "*",
 		"@woovi-playground/tsconfig": "*",
-		"relay-compiler": "^15.0.0",
+		"relay-compiler": "^16.0.0",
 		"typescript": "^4.5.3"
 	}
 }
