@@ -19,7 +19,7 @@
 		"graphql-ws": "^5.14.2",
 		"kcors": "^2.2.2",
 		"koa": "^2.14.2",
-		"koa-bodyparser": "^4.4.0",
+		"koa-bodyparser": "^4.4.1",
 		"koa-graphql": "^0.12.0",
 		"koa-logger": "^3.2.1",
 		"koa-router": "^12.0.1",
@@ -29,7 +29,7 @@
 	"devDependencies": {
 		"@types/kcors": "^2.2.8",
 		"@types/koa": "^2.13.12",
-		"@types/koa-bodyparser": "^4.3.10",
+		"@types/koa-bodyparser": "^4.3.12",
 		"@types/koa-logger": "^3.1.5",
 		"@types/koa-router": "^7.4.8",
 		"@types/node": "^17.0.12",
