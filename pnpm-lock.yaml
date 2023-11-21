@@ -91,8 +91,8 @@ importers:
         specifier: ^3.1.5
         version: 3.1.5
       '@types/koa-router':
-        specifier: ^7.4.4
-        version: 7.4.4
+        specifier: ^7.4.8
+        version: 7.4.8
       '@types/node':
         specifier: ^17.0.12
         version: 17.0.12
@@ -1164,8 +1164,8 @@ packages:
       '@types/koa': 2.13.5
     dev: true
 
-  /@types/koa-router@7.4.4:
-    resolution: {integrity: sha512-3dHlZ6CkhgcWeF6wafEUvyyqjWYfKmev3vy1PtOmr0mBc3wpXPU5E8fBBd4YQo5bRpHPfmwC5yDaX7s4jhIN6A==}
+  /@types/koa-router@7.4.8:
+    resolution: {integrity: sha512-SkWlv4F9f+l3WqYNQHnWjYnyTxYthqt8W9az2RTdQW7Ay8bc00iRZcrb8MC75iEfPqnGcg2csEl8tTG1NQPD4A==}
     dependencies:
       '@types/koa': 2.13.5
     dev: true
