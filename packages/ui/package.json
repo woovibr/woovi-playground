@@ -9,7 +9,7 @@
 	},
 	"devDependencies": {
 		"@types/react": "^17.0.37",
-		"@types/react-dom": "^17.0.11",
+		"@types/react-dom": "^18.2.16",
 		"@woovi-playground/eslint-config-custom": "*",
 		"@woovi-playground/tsconfig": "*",
 		"eslint": "^7.32.0",
