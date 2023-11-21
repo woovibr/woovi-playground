@@ -11,7 +11,7 @@
 		"@entria/graphql-mongo-helpers": "^1.1.2",
 		"dataloader": "^2.2.2",
 		"dotenv-safe": "^8.2.0",
-		"graphql": "^16.6.0",
+		"graphql": "^16.8.1",
 		"graphql-redis-subscriptions": "^2.6.0",
 		"graphql-relay": "^0.10.0",
 		"graphql-relay-subscription": "^1.0.0",
