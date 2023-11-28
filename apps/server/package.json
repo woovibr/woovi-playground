@@ -33,6 +33,6 @@
 		"@types/koa-logger": "^3.1.5",
 		"@types/koa-router": "^7.4.8",
 		"@types/node": "^17.0.12",
-		"tsx": "^3.12.6"
+		"tsx": "^4.6.0"
 	}
 }
