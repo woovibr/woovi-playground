@@ -8,7 +8,9 @@
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
 		"lint": "turbo run lint",
 		"relay": "turbo run relay",
-		"schema": "turbo run schema"
+		"schema": "turbo run schema",
+		"compose:up": "docker-compose -f docker-compose.yml up -d",
+		"compose-down": "docker-compose -f docker-compose down"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "^7.23.8",
