@@ -69,10 +69,10 @@ This is an example of how to list things you need to use the software and how to
   npm install pnpm -g
   ```
 
-- MongoDB
+- Docker
 
   ```sh
-  https://www.mongodb.com/docs/manual/installation/
+  https://www.docker.com/get-started/
   ```
 
 ## Installation
@@ -89,19 +89,25 @@ git clone https://github.com/entria/woovi-playground.git
    pnpm install
    ```
 
-2. Setup Configuration
+2. Run the container(or stop it, if necessary):
+  
+   ```sh
+   pnpm compose:up
+   ```
+
+3. Setup Configuration
 
    ```sh
    pnpm config:local
    ```
 
-3. Run the relay
+4. Run the relay
 
     ```sh
     pnpm relay
     ```
 
-4. Run the Project
+5. Run the Project
 
    ```sh
    pnpm dev
