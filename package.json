@@ -10,7 +10,7 @@
 		"relay": "turbo run relay",
 		"schema": "turbo run schema",
 		"compose:up": "docker-compose -f docker-compose.yml up -d",
-		"compose-down": "docker-compose -f docker-compose down"
+		"compose:down": "docker-compose -f docker-compose.yml down"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "^7.23.8",
